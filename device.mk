@@ -205,7 +205,7 @@ PRODUCT_PACKAGES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
+#    com.android.nfc_extras \
     nfc_nci.pn54x.default \
     NfcNci \
     Tag
@@ -252,11 +252,11 @@ PRODUCT_PACKAGES += \
 endif
 
 # sensor utilities (only for userdebug and eng builds)
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PACKAGES += \
-    nanotool \
-    sensortest
-endif
+#ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+#PRODUCT_PACKAGES += \
+#    nanotool \
+#    sensortest
+#endif
 
 PRODUCT_PACKAGES += \
     keystore.msm8992 \
